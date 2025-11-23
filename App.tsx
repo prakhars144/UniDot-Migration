@@ -1,8 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { MIGRATION_DATA } from './data/migrationData';
-import { Category, MigrationItem } from './types';
+import { Category } from './types';
 import CheatSheetCard from './components/CheatSheetCard';
-import AIAssistant from './components/AIAssistant';
 
 const App: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<Category | 'All'>('All');
@@ -162,8 +161,6 @@ const App: React.FC = () => {
           )}
         </main>
       </div>
-
-      <AIAssistant />
     </div>
   );
 };
